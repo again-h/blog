@@ -24,7 +24,7 @@ const POSTS_DATA = [
 
 Python 可以直接当计算器使用，支持完整的数学运算：
 
-\`\`\`python
+\<code>\</code>\`python
 # 基本运算
 2 + 2       # 4
 50 - 5 * 6  # 20
@@ -34,15 +34,15 @@ Python 可以直接当计算器使用，支持完整的数学运算：
 17 // 3     # 5（整除，向下取整）
 17 % 3      # 2（取余数）
 5 ** 2      # 25（乘方）
-\`\`\`
+\<code>\</code>\`
 
-Python 的数字类型涵盖 `int`（整数）、`float`（浮点数），以及 `Decimal`（精确十进制）、`Fraction`（分数）和复数（`3+5j`）。
+Python 的数字类型涵盖 <code>int</code>（整数）、<code>float</code>（浮点数），以及 <code>Decimal</code>（精确十进制）、<code>Fraction</code>（分数）和复数（<code>3+5j</code>）。
 
 ## 字符串
 
 字符串使用单引号或双引号定义，两者等价：
 
-\`\`\`python
+\<code>\</code>\`python
 'Hello, World!'
 "Python 入门"
 
@@ -54,26 +54,26 @@ r'C:\\Users\\name'
 第一行
 第二行
 """
-\`\`\`
+\<code>\</code>\`
 
 > 字符串是**不可变**的，一旦创建就无法修改其中某个字符，只能创建新字符串。
 
 字符串支持索引和切片操作：
 
-\`\`\`python
+\<code>\</code>\`python
 word = 'Python'
 word[0]     # 'P'（正向索引从 0 开始）
 word[-1]    # 'n'（负向索引从 -1 开始）
 word[0:2]   # 'Py'（切片，左闭右开）
 word[2:]    # 'thon'
 len(word)   # 6（字符串长度）
-\`\`\`
+\<code>\</code>\`
 
 ## 列表
 
 列表是 Python 中最常用的数据结构，用方括号定义，元素类型可以不同：
 
-\`\`\`python
+\<code>\</code>\`python
 squares = [1, 4, 9, 16, 25]
 squares[0]      # 1
 squares[-1]     # 25
@@ -82,20 +82,20 @@ squares[1:3]    # [4, 9]
 # 列表是可变的
 squares.append(36)  # 追加元素
 squares[0] = 0      # 修改元素
-\`\`\`
+\<code>\</code>\`
 
 与字符串不同，列表是**可变的**（mutable），可以随时修改、增删元素。
 
 ## 第一步：控制流
 
-\`\`\`python
+\<code>\</code>\`python
 # 斐波那契数列（展示多重赋值和 while 循环）
 a, b = 0, 1
 while a < 100:
     print(a, end=', ')
     a, b = b, a + b
 # 输出：0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,
-\`\`\`
+\<code>\</code>\`
 
 Python 用**缩进**来组织代码块，同一块语句的缩进量必须完全一致，这是 Python 与众不同的语法设计。
 
@@ -103,9 +103,9 @@ Python 用**缩进**来组织代码块，同一块语句的缩进量必须完全
 
 | 数据类型 | 可变性 | 特点 |
 |----------|--------|------|
-| `int` / `float` | 不可变 | 数字运算 |
-| `str` 字符串 | 不可变 | 支持切片、索引 |
-| `list` 列表 | **可变** | 支持增删改 |
+| <code>int</code> / <code>float</code> | 不可变 | 数字运算 |
+| <code>str</code> 字符串 | 不可变 | 支持切片、索引 |
+| <code>list</code> 列表 | **可变** | 支持增删改 |
 
 掌握这三种基础类型，就迈出了 Python 入门的第一步。
     `
@@ -130,7 +130,7 @@ Python 用**缩进**来组织代码块，同一块语句的缩进量必须完全
 
 列表提供了丰富的内置方法：
 
-\`\`\`python
+\<code>\</code>\`python
 fruits = ['orange', 'apple', 'pear', 'banana']
 
 fruits.append('grape')       # 末尾追加
@@ -141,13 +141,13 @@ fruits.sort()                # 就地排序
 fruits.reverse()             # 就地翻转
 fruits.count('apple')        # 统计出现次数
 fruits.index('orange')       # 查找索引
-\`\`\`
+\<code>\</code>\`
 
 ### 列表推导式
 
 列表推导式是 Python 最具特色的语法之一，用一行代码替代多行循环：
 
-\`\`\`python
+\<code>\</code>\`python
 # 传统写法
 squares = []
 for x in range(10):
@@ -161,11 +161,11 @@ evens = [x for x in range(20) if x % 2 == 0]
 
 # 多重循环（笛卡尔积）
 pairs = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
-\`\`\`
+\<code>\</code>\`
 
 ### 用列表模拟栈和队列
 
-\`\`\`python
+\<code>\</code>\`python
 # 栈（LIFO）：用列表即可
 stack = [3, 4, 5]
 stack.append(6)   # 入栈
@@ -176,13 +176,13 @@ from collections import deque
 queue = deque(["Alice", "Bob", "Charlie"])
 queue.append("Dave")   # 入队
 queue.popleft()        # 出队 → "Alice"
-\`\`\`
+\<code>\</code>\`
 
 ## 元组
 
 元组与列表类似，但**不可变**，适合存储不需要修改的数据：
 
-\`\`\`python
+\<code>\</code>\`python
 point = (3, 7)          # 坐标
 rgb = (255, 128, 0)     # 颜色
 
@@ -192,15 +192,15 @@ print(x, y)  # 3 7
 
 # 单元素元组（注意末尾逗号）
 singleton = ('hello',)
-\`\`\`
+\<code>\</code>\`
 
-> 列表适合存储同类元素的有序集合；元组更适合存储不同类型、有固定语义的记录，如 `(name, age, score)`。
+> 列表适合存储同类元素的有序集合；元组更适合存储不同类型、有固定语义的记录，如 <code>(name, age, score)</code>。
 
 ## 集合
 
 集合是**无序不重复**元素的集合，天然去重，支持数学运算：
 
-\`\`\`python
+\<code>\</code>\`python
 a = {1, 2, 3, 4, 5}
 b = {3, 4, 5, 6, 7}
 
@@ -211,13 +211,13 @@ a ^ b   # 对称差：{1, 2, 6, 7}
 
 # 集合推导式
 unique_chars = {c for c in 'abracadabra' if c not in 'abc'}
-\`\`\`
+\<code>\</code>\`
 
 ## 字典
 
 字典是键值对的映射，是 Python 中最强大的数据结构之一：
 
-\`\`\`python
+\<code>\</code>\`python
 # 创建字典
 person = {'name': '黄shiqin', 'age': 25, 'city': '深圳'}
 
@@ -234,11 +234,11 @@ for key, value in person.items():
 # 字典推导式
 squares = {x: x**2 for x in range(6)}
 # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
-\`\`\`
+\<code>\</code>\`
 
 ## 高效循环技巧
 
-\`\`\`python
+\<code>\</code>\`python
 # enumerate：同时获取索引和值
 for i, fruit in enumerate(['苹果', '香蕉', '橙子']):
     print(f'{i}: {fruit}')
@@ -256,16 +256,16 @@ for fruit in sorted({'banana', 'apple', 'orange'}):
 # reversed：逆向遍历
 for i in reversed(range(1, 6)):
     print(i)  # 5, 4, 3, 2, 1
-\`\`\`
+\<code>\</code>\`
 
 ## 四种数据结构对比
 
 | 类型 | 有序 | 可变 | 可重复 | 语法 |
 |------|------|------|--------|------|
-| `list` 列表 | ✅ | ✅ | ✅ | `[1, 2, 3]` |
-| `tuple` 元组 | ✅ | ❌ | ✅ | `(1, 2, 3)` |
-| `set` 集合 | ❌ | ✅ | ❌ | `{1, 2, 3}` |
-| `dict` 字典 | ✅(3.7+) | ✅ | 键唯一 | `{'k': 'v'}` |
+| <code>list</code> 列表 | ✅ | ✅ | ✅ | <code>[1, 2, 3]</code> |
+| <code>tuple</code> 元组 | ✅ | ❌ | ✅ | <code>(1, 2, 3)</code> |
+| <code>set</code> 集合 | ❌ | ✅ | ❌ | <code>{1, 2, 3}</code> |
+| <code>dict</code> 字典 | ✅(3.7+) | ✅ | 键唯一 | <code>{'k': 'v'}</code> |
     `
   },
   {
@@ -290,9 +290,9 @@ for i in reversed(range(1, 6)):
 
 ## 协程基础
 
-使用 `async def` 定义协程函数：
+使用 <code>async def</code> 定义协程函数：
 
-\`\`\`python
+\<code>\</code>\`python
 import asyncio
 
 async def say_hello():
@@ -302,21 +302,21 @@ async def say_hello():
 
 # 运行协程
 asyncio.run(say_hello())
-\`\`\`
+\<code>\</code>\`
 
-> 注意：调用 `say_hello()` **不会执行**协程，只返回一个协程对象。必须通过 `asyncio.run()` 或 `await` 来真正执行。
+> 注意：调用 <code>say_hello()</code> **不会执行**协程，只返回一个协程对象。必须通过 <code>asyncio.run()</code> 或 <code>await</code> 来真正执行。
 
 ## 三种运行协程的方式
 
 | 方式 | 适用场景 |
 |------|----------|
-| `asyncio.run(coro)` | 程序入口，运行最顶层协程 |
-| `await coro` | 在协程内部顺序等待另一个协程 |
-| `asyncio.create_task(coro)` | 创建并发任务，不等待立即调度 |
+| <code>asyncio.run(coro)</code> | 程序入口，运行最顶层协程 |
+| <code>await coro</code> | 在协程内部顺序等待另一个协程 |
+| <code>asyncio.create_task(coro)</code> | 创建并发任务，不等待立即调度 |
 
 ## 顺序执行 vs 并发执行
 
-\`\`\`python
+\<code>\</code>\`python
 async def fetch(name, delay):
     await asyncio.sleep(delay)
     print(f"{name} 完成，耗时 {delay}s")
@@ -333,11 +333,11 @@ async def concurrent():
     task2 = asyncio.create_task(fetch("任务B", 2))
     await task1
     await task2
-\`\`\`
+\<code>\</code>\`
 
 ## asyncio.gather()：一次等待多个任务
 
-\`\`\`python
+\<code>\</code>\`python
 async def factorial(name, n):
     result = 1
     for i in range(2, n + 1):
@@ -356,15 +356,15 @@ async def main():
     print(results)  # [6, 24, 120]
 
 asyncio.run(main())
-\`\`\`
+\<code>\</code>\`
 
-`gather()` 返回的结果列表顺序与传入顺序一致，与实际完成顺序无关。
+<code>gather()</code> 返回的结果列表顺序与传入顺序一致，与实际完成顺序无关。
 
 ## TaskGroup：结构化并发（Python 3.11+）
 
-Python 3.11 引入了更安全的 `TaskGroup`，推荐替代 `gather()`：
+Python 3.11 引入了更安全的 <code>TaskGroup</code>，推荐替代 <code>gather()</code>：
 
-\`\`\`python
+\<code>\</code>\`python
 async def main():
     async with asyncio.TaskGroup() as tg:
         task1 = tg.create_task(fetch("任务A", 1))
@@ -372,24 +372,24 @@ async def main():
         task3 = tg.create_task(fetch("任务C", 3))
     # 退出 with 块时自动等待所有任务完成
     print("全部任务完成")
-\`\`\`
+\<code>\</code>\`
 
-`TaskGroup` 的优势：任意一个子任务抛出异常，其余任务会**自动取消**，避免资源泄漏。
+<code>TaskGroup</code> 的优势：任意一个子任务抛出异常，其余任务会**自动取消**，避免资源泄漏。
 
 ## 超时控制
 
-\`\`\`python
+\<code>\</code>\`python
 async def main():
     try:
         async with asyncio.timeout(5.0):   # 5 秒超时
             await long_running_task()
     except asyncio.TimeoutError:
         print("任务超时！")
-\`\`\`
+\<code>\</code>\`
 
 ## 任务取消
 
-\`\`\`python
+\<code>\</code>\`python
 async def main():
     task = asyncio.create_task(some_long_task())
     await asyncio.sleep(1)
@@ -399,11 +399,11 @@ async def main():
         await task
     except asyncio.CancelledError:
         print("任务已被取消")
-\`\`\`
+\<code>\</code>\`
 
 ## 实战：并发抓取多个 URL
 
-\`\`\`python
+\<code>\</code>\`python
 import asyncio
 import aiohttp
 
@@ -423,15 +423,15 @@ async def main():
     print(f"获取到 {len(results)} 个响应")
 
 asyncio.run(main())
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
-- 用 `async def` 定义协程，用 `await` 等待结果
-- 用 `create_task()` 创建并发任务（不立即等待）
-- 用 `gather()` 同时等待多个任务并收集结果
-- Python 3.11+ 推荐用 `TaskGroup` 实现结构化并发
-- asyncio 适合 **I/O 密集型**任务；CPU 密集型任务请用 `multiprocessing`
+- 用 <code>async def</code> 定义协程，用 <code>await</code> 等待结果
+- 用 <code>create_task()</code> 创建并发任务（不立即等待）
+- 用 <code>gather()</code> 同时等待多个任务并收集结果
+- Python 3.11+ 推荐用 <code>TaskGroup</code> 实现结构化并发
+- asyncio 适合 **I/O 密集型**任务；CPU 密集型任务请用 <code>multiprocessing</code>
     `
   },
   {
@@ -452,20 +452,20 @@ pandas 是 Python 数据分析生态的核心库，以 DataFrame 为中心的数
 
 ## 安装与导入
 
-\`\`\`bash
+\<code>\</code>\`bash
 pip install pandas numpy
-\`\`\`
+\<code>\</code>\`
 
-\`\`\`python
+\<code>\</code>\`python
 import pandas as pd
 import numpy as np
-\`\`\`
+\<code>\</code>\`
 
 ## Series：一维数据
 
 Series 是带标签的一维数组：
 
-\`\`\`python
+\<code>\</code>\`python
 # 从列表创建
 s = pd.Series([10, 20, 30, 40], index=['a', 'b', 'c', 'd'])
 
@@ -475,13 +475,13 @@ s[s > 20]       # 条件过滤：c→30, d→40
 s * 2           # 广播运算：[20, 40, 60, 80]
 s.mean()        # 均值：25.0
 s.describe()    # 统计摘要
-\`\`\`
+\<code>\</code>\`
 
 ## DataFrame：二维数据
 
 DataFrame 是最常用的数据结构，类似 Excel 表格：
 
-\`\`\`python
+\<code>\</code>\`python
 # 从字典创建
 df = pd.DataFrame({
     '姓名': ['Alice', 'Bob', 'Charlie', 'Diana'],
@@ -497,11 +497,11 @@ df.head(2)      # 前 2 行
 df.tail(2)      # 后 2 行
 df.info()       # 概览（含缺失值信息）
 df.describe()   # 数值列统计摘要
-\`\`\`
+\<code>\</code>\`
 
 ## 数据选取
 
-\`\`\`python
+\<code>\</code>\`python
 # 选取列
 df['姓名']                  # 单列 → Series
 df[['姓名', '薪资']]        # 多列 → DataFrame
@@ -517,11 +517,11 @@ df.iloc[1:3, :2]            # 第 1-2 行、前 2 列
 # 条件过滤
 df[df['薪资'] > 18000]
 df[(df['年龄'] > 25) & (df['城市'] == '上海')]
-\`\`\`
+\<code>\</code>\`
 
 ## 数据清洗
 
-\`\`\`python
+\<code>\</code>\`python
 # 处理缺失值
 df.isnull().sum()           # 各列缺失值数量
 df.dropna()                 # 删除含缺失值的行
@@ -538,11 +538,11 @@ df['入职日期'] = pd.to_datetime(df['入职日期'])
 
 # 重命名列
 df.rename(columns={'姓名': 'name', '薪资': 'salary'}, inplace=True)
-\`\`\`
+\<code>\</code>\`
 
 ## 数据统计与聚合
 
-\`\`\`python
+\<code>\</code>\`python
 # 基本统计
 df['薪资'].mean()     # 均值
 df['薪资'].median()   # 中位数
@@ -566,11 +566,11 @@ pivot = df.pivot_table(
     columns='部门',
     aggfunc='mean'
 )
-\`\`\`
+\<code>\</code>\`
 
 ## 数据合并
 
-\`\`\`python
+\<code>\</code>\`python
 df1 = pd.DataFrame({'id': [1, 2, 3], 'name': ['Alice', 'Bob', 'Charlie']})
 df2 = pd.DataFrame({'id': [1, 2, 4], 'score': [95, 87, 92]})
 
@@ -582,11 +582,11 @@ pd.merge(df1, df2, on='id', how='outer')   # 外连接
 # concat（纵向/横向拼接）
 pd.concat([df1, df2], axis=0)    # 纵向拼接（行）
 pd.concat([df1, df2], axis=1)    # 横向拼接（列）
-\`\`\`
+\<code>\</code>\`
 
 ## 数据排序与索引
 
-\`\`\`python
+\<code>\</code>\`python
 df.sort_values('薪资', ascending=False)          # 按薪资降序
 df.sort_values(['城市', '薪资'], ascending=[True, False])
 
@@ -595,11 +595,11 @@ df.reset_index(drop=True)
 
 # 设置索引
 df.set_index('姓名')
-\`\`\`
+\<code>\</code>\`
 
 ## 实战：分析员工数据
 
-\`\`\`python
+\<code>\</code>\`python
 # 读取数据
 df = pd.read_csv('employees.csv', encoding='utf-8')
 
@@ -617,7 +617,7 @@ print(top3)
 # 分析：高薪员工占比
 high_salary = (df['薪资'] > df['薪资'].quantile(0.75)).mean()
 print(f"高薪员工占比：{high_salary:.1%}")
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -644,7 +644,7 @@ pandas 的核心操作可以归纳为五类：**读取**、**选取**、**清洗
 
 f-string（格式化字符串字面值）是 Python 3.6+ 引入的特性，是目前**最推荐**的格式化方式：
 
-\`\`\`python
+\<code>\</code>\`python
 name = "黄shiqin"
 age = 25
 score = 98.567
@@ -664,24 +664,24 @@ print(f"{name=}, {age=}")        # name='黄shiqin', age=25
 # 表达式求值
 print(f"明年 {age + 1} 岁")
 print(f"大写：{name.upper()}")
-\`\`\`
+\<code>\</code>\`
 
 ## 其他格式化方式
 
-\`\`\`python
+\<code>\</code>\`python
 # str.format()（兼容旧代码时使用）
 "{} 今年 {} 岁".format("Alice", 25)
 "{name} 的分数是 {score:.1f}".format(name="Bob", score=92.5)
 
 # % 格式化（旧式，不推荐）
 "Hello, %s! 你有 %d 条消息" % ("Alice", 3)
-\`\`\`
+\<code>\</code>\`
 
 ## 文件读写
 
 ### 推荐用法：with 语句
 
-\`\`\`python
+\<code>\</code>\`python
 # 写文件
 with open('data.txt', 'w', encoding='utf-8') as f:
     f.write("第一行\\n")
@@ -699,37 +699,37 @@ with open('data.txt', 'r', encoding='utf-8') as f:
 # 追加写入
 with open('data.txt', 'a', encoding='utf-8') as f:
     f.write("追加的一行\\n")
-\`\`\`
+\<code>\</code>\`
 
-> 使用 `with` 语句的好处：文件在 `with` 块结束后**自动关闭**，即使发生异常也不会泄漏文件句柄。
+> 使用 <code>with</code> 语句的好处：文件在 <code>with</code> 块结束后**自动关闭**，即使发生异常也不会泄漏文件句柄。
 
 ### 文件打开模式
 
 | 模式 | 说明 |
 |------|------|
-| `'r'` | 只读（默认） |
-| `'w'` | 写入（覆盖） |
-| `'a'` | 追加 |
-| `'r+'` | 读写 |
-| `'rb'` | 二进制读取 |
-| `'wb'` | 二进制写入 |
+| <code>'r'</code> | 只读（默认） |
+| <code>'w'</code> | 写入（覆盖） |
+| <code>'a'</code> | 追加 |
+| <code>'r+'</code> | 读写 |
+| <code>'rb'</code> | 二进制读取 |
+| <code>'wb'</code> | 二进制写入 |
 
 ### 常用文件方法
 
-\`\`\`python
+\<code>\</code>\`python
 with open('data.txt', 'r', encoding='utf-8') as f:
     f.read()            # 读取全部内容
     f.readline()        # 读取一行
     f.readlines()       # 读取所有行，返回列表
     f.tell()            # 当前文件位置
     f.seek(0)           # 跳转到文件开头
-\`\`\`
+\<code>\</code>\`
 
 ## JSON 数据序列化
 
 JSON 是最常用的数据交换格式，Python 内置支持：
 
-\`\`\`python
+\<code>\</code>\`python
 import json
 
 data = {
@@ -754,13 +754,13 @@ print(parsed['name'])   # 黄shiqin
 # 从文件读取
 with open('config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)
-\`\`\`
+\<code>\</code>\`
 
 ## 路径操作（pathlib）
 
-Python 3.4+ 推荐使用 `pathlib` 替代字符串拼接路径：
+Python 3.4+ 推荐使用 <code>pathlib</code> 替代字符串拼接路径：
 
-\`\`\`python
+\<code>\</code>\`python
 from pathlib import Path
 
 # 路径操作
@@ -779,16 +779,16 @@ content = path.read_text(encoding='utf-8')
 # 遍历目录
 for f in Path('.').glob('*.py'):
     print(f.name)
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
 | 场景 | 推荐方式 |
 |------|----------|
 | 字符串格式化 | f-string |
-| 文件读写 | `with open()` |
-| 数据序列化 | `json` 模块 |
-| 路径操作 | `pathlib.Path` |
+| 文件读写 | <code>with open()</code> |
+| 数据序列化 | <code>json</code> 模块 |
+| 路径操作 | <code>pathlib.Path</code> |
     `
   },
   {
@@ -814,7 +814,7 @@ Python 的错误分为两类：
 - **语法错误（SyntaxError）**：代码写错了，解析阶段即被发现
 - **异常（Exception）**：语法正确，但运行时出错
 
-\`\`\`python
+\<code>\</code>\`python
 # 常见异常类型
 10 / 0              # ZeroDivisionError
 undefined_var       # NameError
@@ -823,11 +823,11 @@ int('abc')          # ValueError
 [][10]              # IndexError
 {}['missing']       # KeyError
 open('no_file.txt') # FileNotFoundError
-\`\`\`
+\<code>\</code>\`
 
 ## try / except 基本结构
 
-\`\`\`python
+\<code>\</code>\`python
 try:
     x = int(input("请输入数字："))
     result = 100 / x
@@ -838,19 +838,19 @@ except ZeroDivisionError:
     print("不能除以零！")
 except Exception as e:
     print(f"未知错误：{e}")
-\`\`\`
+\<code>\</code>\`
 
 **执行流程：**
-1. 执行 `try` 块中的代码
-2. 若无异常 → 跳过所有 `except`
-3. 若有异常 → 找到匹配的 `except`，执行后继续
+1. 执行 <code>try</code> 块中的代码
+2. 若无异常 → 跳过所有 <code>except</code>
+3. 若有异常 → 找到匹配的 <code>except</code>，执行后继续
 4. 若无匹配 → 异常向上传播
 
 ## else 子句
 
-`else` 在 **try 块没有异常时**执行，用于分离"正常逻辑"和"异常处理"：
+<code>else</code> 在 **try 块没有异常时**执行，用于分离"正常逻辑"和"异常处理"：
 
-\`\`\`python
+\<code>\</code>\`python
 for filename in ['data.json', 'missing.txt']:
     try:
         f = open(filename, 'r')
@@ -861,13 +861,13 @@ for filename in ['data.json', 'missing.txt']:
         data = f.read()
         f.close()
         print(f"读取成功：{len(data)} 字节")
-\`\`\`
+\<code>\</code>\`
 
 ## finally 子句：必须执行的清理
 
-`finally` 无论如何都会执行，适合释放资源：
+<code>finally</code> 无论如何都会执行，适合释放资源：
 
-\`\`\`python
+\<code>\</code>\`python
 import sqlite3
 
 def query_db(sql):
@@ -883,11 +883,11 @@ def query_db(sql):
     finally:
         if conn:
             conn.close()   # 无论成功与否，都关闭连接
-\`\`\`
+\<code>\</code>\`
 
 ## raise：主动触发异常
 
-\`\`\`python
+\<code>\</code>\`python
 def validate_age(age):
     if not isinstance(age, int):
         raise TypeError(f"年龄必须是整数，收到 {type(age).__name__}")
@@ -901,11 +901,11 @@ try:
 except ValueError as e:
     print(f"捕获到：{e}")
     raise   # 继续向上传播
-\`\`\`
+\<code>\</code>\`
 
 ## 自定义异常
 
-\`\`\`python
+\<code>\</code>\`python
 class AppError(Exception):
     """应用基础异常"""
     pass
@@ -928,11 +928,11 @@ try:
     raise AuthError("Token 已过期", user="alice")
 except AuthError as e:
     print(f"认证错误：{e}，用户：{e.user}")
-\`\`\`
+\<code>\</code>\`
 
 ## 异常链
 
-\`\`\`python
+\<code>\</code>\`python
 # 隐式异常链：在 except 中触发新异常
 try:
     open('config.json')
@@ -945,11 +945,11 @@ try:
     open('config.json')
 except FileNotFoundError:
     raise RuntimeError("配置文件加载失败") from None
-\`\`\`
+\<code>\</code>\`
 
 ## 完整示例：健壮的 HTTP 请求
 
-\`\`\`python
+\<code>\</code>\`python
 import json
 import urllib.request
 import urllib.error
@@ -970,17 +970,17 @@ def fetch_json(url, timeout=10):
         raise TimeoutError(f"请求超时（>{timeout}s）")
     finally:
         print(f"请求完成：{url}")
-\`\`\`
+\<code>\</code>\`
 
 ## 异常处理最佳实践
 
 | 原则 | 说明 |
 |------|------|
-| **精确捕获** | 捕获具体异常而非 `Exception`，避免掩盖 bug |
+| **精确捕获** | 捕获具体异常而非 <code>Exception</code>，避免掩盖 bug |
 | **早抛晚捕** | 在底层触发异常，在高层统一处理 |
-| **善用 finally** | 资源释放放在 `finally`，确保执行 |
+| **善用 finally** | 资源释放放在 <code>finally</code>，确保执行 |
 | **自定义异常** | 为业务错误定义专属异常类，携带上下文信息 |
-| **异常链** | 用 `from` 保留原始错误信息，方便调试 |
+| **异常链** | 用 <code>from</code> 保留原始错误信息，方便调试 |
     `
   },
 
@@ -1016,7 +1016,7 @@ def fetch_json(url, timeout=10):
 2. **读取状态** - 订阅机制
 3. **更新状态** - 触发重渲染
 
-\`\`\`javascript
+\<code>\</code>\`javascript
 class Store {
   constructor(initialState) {
     this.state = initialState;
@@ -1040,13 +1040,13 @@ class Store {
     return () => this.listeners.delete(listener);
   }
 }
-\`\`\`
+\<code>\</code>\`
 
 ## React Hook 集成
 
-利用 \`useSyncExternalStore\` 将 Store 与 React 集成：
+利用 \<code>useSyncExternalStore\</code> 将 Store 与 React 集成：
 
-\`\`\`javascript
+\<code>\</code>\`javascript
 import { useSyncExternalStore } from 'react';
 
 function useStore(store, selector) {
@@ -1055,7 +1055,7 @@ function useStore(store, selector) {
     () => selector(store.getState())
   );
 }
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -1082,7 +1082,7 @@ Python 3.4 引入了 asyncio 模块，为异步编程提供了原生支持。理
 
 协程是 Python 异步编程的基础单元：
 
-\`\`\`python
+\<code>\</code>\`python
 import asyncio
 
 async def fetch_data(url: str) -> dict:
@@ -1100,7 +1100,7 @@ async def main():
     print(f"获取到 {len(results)} 个结果")
 
 asyncio.run(main())
-\`\`\`
+\<code>\</code>\`
 
 ### 事件循环
 
@@ -1110,7 +1110,7 @@ asyncio.run(main())
 
 ## 实际应用：并发爬虫
 
-\`\`\`python
+\<code>\</code>\`python
 import asyncio
 import aiohttp
 from typing import List
@@ -1123,7 +1123,7 @@ async def batch_crawl(urls: List[str]) -> List[str]:
     async with aiohttp.ClientSession() as session:
         tasks = [crawl(session, url) for url in urls]
         return await asyncio.gather(*tasks, return_exceptions=True)
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -1146,7 +1146,7 @@ async def batch_crawl(urls: List[str]) -> List[str]:
 
 ## Dockerfile 编写
 
-\`\`\`dockerfile
+\<code>\</code>\`dockerfile
 # 多阶段构建，减小镜像体积
 FROM node:20-alpine AS builder
 WORKDIR /app
@@ -1161,11 +1161,11 @@ COPY . .
 EXPOSE 3000
 USER node
 CMD ["node", "server.js"]
-\`\`\`
+\<code>\</code>\`
 
 ## docker-compose 配置
 
-\`\`\`yaml
+\<code>\</code>\`yaml
 version: '3.8'
 services:
   app:
@@ -1185,11 +1185,11 @@ services:
       - ./ssl:/etc/nginx/ssl
     depends_on:
       - app
-\`\`\`
+\<code>\</code>\`
 
 ## Nginx 反向代理
 
-\`\`\`nginx
+\<code>\</code>\`nginx
 upstream app {
     server app:3000;
     keepalive 32;
@@ -1207,7 +1207,7 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 }
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -1230,7 +1230,7 @@ TypeScript 的类型系统极为强大，本文将探索几个高级特性。
 
 ## 条件类型
 
-\`\`\`typescript
+\<code>\</code>\`typescript
 // 条件类型
 type IsArray<T> = T extends any[] ? true : false;
 
@@ -1245,25 +1245,25 @@ type MyPartial<T> = {
 type MyRequired<T> = {
   [K in keyof T]-?: T[K];
 };
-\`\`\`
+\<code>\</code>\`
 
 ## 模板字面量类型
 
-\`\`\`typescript
+\<code>\</code>\`typescript
 type EventName = "click" | "focus" | "blur";
-type Handler = \`on\${Capitalize<EventName>}\`;
+type Handler = \<code>on\${Capitalize<EventName>}\</code>;
 // "onClick" | "onFocus" | "onBlur"
 
 // API 路径类型安全
 type ApiRoute = 
-  | \`/users/\${string}\`
-  | \`/posts/\${number}\`
+  | \<code>/users/\${string}\</code>
+  | \<code>/posts/\${number}\</code>
   | "/login";
-\`\`\`
+\<code>\</code>\`
 
 ## 推断类型
 
-\`\`\`typescript
+\<code>\</code>\`typescript
 // 从函数返回值推断类型
 type ReturnType<T extends (...args: any) => any> =
   T extends (...args: any) => infer R ? R : never;
@@ -1271,7 +1271,7 @@ type ReturnType<T extends (...args: any) => any> =
 // 展开 Promise
 type Awaited<T> =
   T extends Promise<infer U> ? Awaited<U> : T;
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -1296,7 +1296,7 @@ type Awaited<T> =
 
 适合有明确版本发布周期的项目：
 
-\`\`\`bash
+\<code>\</code>\`bash
 # 创建功能分支
 git checkout -b feature/user-auth develop
 
@@ -1306,7 +1306,7 @@ git merge --no-ff feature/user-auth
 
 # 创建发布分支
 git checkout -b release/1.0.0 develop
-\`\`\`
+\<code>\</code>\`
 
 ## Trunk-Based Development
 
@@ -1314,25 +1314,25 @@ git checkout -b release/1.0.0 develop
 
 > "每天多次向主分支提交小改动，通过 Feature Flags 控制功能的可见性。"
 
-\`\`\`bash
+\<code>\</code>\`bash
 # 直接在 main 分支工作，或使用短期特性分支（< 2天）
 git checkout -b feature/quick-fix
 # 快速完成，同天合并
 git push origin feature/quick-fix
 # 创建 PR，通过 CI 后合并
-\`\`\`
+\<code>\</code>\`
 
 ## Commit 规范
 
 采用 Conventional Commits 规范：
 
-\`\`\`
+\<code>\</code>\`
 feat: add user authentication
 fix: resolve login redirect bug
 docs: update API documentation
 refactor: extract payment logic
 test: add unit tests for auth module
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
@@ -1355,7 +1355,7 @@ test: add unit tests for auth module
 
 ## 基本对话
 
-\`\`\`python
+\<code>\</code>\`python
 from openai import OpenAI
 
 client = OpenAI(api_key="your-api-key")
@@ -1369,11 +1369,11 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
-\`\`\`
+\<code>\</code>\`
 
 ## 流式输出
 
-\`\`\`python
+\<code>\</code>\`python
 stream = client.chat.completions.create(
     model="gpt-4o",
     messages=[{"role": "user", "content": "讲一个故事"}],
@@ -1383,13 +1383,13 @@ stream = client.chat.completions.create(
 for chunk in stream:
     if chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="", flush=True)
-\`\`\`
+\<code>\</code>\`
 
 ## Function Calling
 
 让 AI 能够调用你的函数：
 
-\`\`\`python
+\<code>\</code>\`python
 tools = [{
     "type": "function",
     "function": {
@@ -1404,7 +1404,7 @@ tools = [{
         }
     }
 }]
-\`\`\`
+\<code>\</code>\`
 
 ## 总结
 
