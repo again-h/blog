@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章 - xiaoyang's Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">xiaoyang</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="posts.html" class="nav-link active">文章</a></li>
+        <li><a href="about.html" class="nav-link">关于</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1 class="page-title fade-up">所有文章</h1>
+    <p class="page-subtitle fade-up">探索技术的边界，记录成长的轨迹</p>
+  </div>
+
+  <!-- 筛选栏 -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <div id="filterBtns"></div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="搜索文章..." />
+      </div>
+    </div>
+  </div>
+
+  <!-- 文章列表 -->
+  <div class="posts-list">
+    <div class="posts-grid" id="postsGrid"></div>
+    <div id="noResult" style="display:none; text-align:center; padding:3rem; color:var(--text-secondary);">
+      未找到相关文章 🔍
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">xiaoyang</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">用代码记录生活，用文字传递思想</p>
+        <div class="footer-links">
+          <a href="https://github.com/again-h" target="_blank" class="footer-link">GitHub</a>
+          <a href="posts.html" class="footer-link">文章</a>
+          <a href="about.html" class="footer-link">关于</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 xiaoyang · Built with ❤️ and pure HTML/CSS/JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/posts-data.js"></script>
+  <script src="js/posts.js"></script>
+</body>
+</html>

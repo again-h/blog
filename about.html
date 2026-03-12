@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 - xiaoyang's Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">xiaoyang</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="posts.html" class="nav-link">文章</a></li>
+        <li><a href="about.html" class="nav-link active">关于</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="about-page">
+    <!-- 头部信息 -->
+    <div class="about-header fade-up">
+      <div class="about-avatar">
+        <div class="avatar-ring"></div>
+        <div class="avatar-inner">👨‍💻</div>
+      </div>
+      <div class="about-info">
+        <h1>xiaoyang</h1>
+        <p style="color:var(--accent); font-family:var(--font-mono); margin-bottom:0.4rem;">@again-h</p>
+        <p>全栈开发者 · 技术博主 · 开源爱好者</p>
+        <div style="display:flex; gap:0.8rem; margin-top:1rem; flex-wrap:wrap;">
+          <a href="https://github.com/again-h" target="_blank" class="btn btn-outline" style="padding:6px 16px; font-size:0.85rem;">
+            🐙 GitHub
+          </a>
+          <a href="posts.html" class="btn btn-primary" style="padding:6px 16px; font-size:0.85rem;">
+            📝 我的文章
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 个人简介 -->
+    <div class="about-bio fade-up">
+      <h2>👋 你好，我是 xiaoyang</h2>
+      <p>一名热爱代码与技术的全栈开发者，喜欢探索新技术并将学习到的知识通过文字分享出来。我相信技术的力量在于让世界更美好，而写作是传播知识最优雅的方式之一。</p>
+      <p style="margin-top:1rem;">在这个博客里，你会看到我对 <strong style="color:var(--accent)">前端技术</strong>、<strong style="color:var(--purple)">后端开发</strong>、<strong style="color:var(--green)">DevOps</strong> 以及 <strong style="color:var(--orange)">AI 应用</strong> 的探索与思考。每一篇文章都是我认真学习和实践的沉淀。</p>
+      <p style="margin-top:1rem; font-style:italic; color:var(--text-muted);">"代码如诗，逻辑如思，每一个函数都是对世界的一次诠释。"</p>
+    </div>
+
+    <!-- 技术栈 -->
+    <div class="about-bio fade-up">
+      <h2>🛠️ 技术栈</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:1rem; margin-top:1rem;">
+        <div style="padding:1rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">⚛️ 前端</div>
+          <div style="color:var(--text-secondary); font-size:0.9rem; line-height:1.8;">
+            React · Vue · TypeScript<br/>Next.js · Tailwind CSS
+          </div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🚀 后端</div>
+          <div style="color:var(--text-secondary); font-size:0.9rem; line-height:1.8;">
+            Node.js · Python · Go<br/>FastAPI · Express
+          </div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🗄️ 数据库</div>
+          <div style="color:var(--text-secondary); font-size:0.9rem; line-height:1.8;">
+            PostgreSQL · MongoDB<br/>Redis · MySQL
+          </div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-md);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🐳 DevOps</div>
+          <div style="color:var(--text-secondary); font-size:0.9rem; line-height:1.8;">
+            Docker · Kubernetes<br/>GitHub Actions · Nginx
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 成长历程 -->
+    <div class="fade-up">
+      <h2 style="font-size:1.2rem; margin-bottom:1.5rem; color:var(--text-primary); display:flex; align-items:center; gap:0.5rem;">
+        🕐 成长历程
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">探索 AI 应用开发</div>
+          <div class="timeline-desc">深入研究 LLM、RAG 系统和 AI Agent 开发，尝试将 AI 能力集成到实际产品中。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">全栈能力成型</div>
+          <div class="timeline-desc">系统掌握前后端技术栈，开始独立负责项目的全链路开发，从 UI 到 API 到部署。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-title">深入云原生与 DevOps</div>
+          <div class="timeline-desc">学习 Docker、Kubernetes，搭建 CI/CD 流水线，探索微服务架构与容器化部署。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021</div>
+          <div class="timeline-title">开始技术写作</div>
+          <div class="timeline-desc">将学习到的技术知识系统整理成文章分享，养成了总结和输出的好习惯。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-title">踏入编程世界</div>
+          <div class="timeline-desc">从 Python 入门编程，逐渐扩展到 Web 开发领域，爱上了用代码解决问题的感觉。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 联系方式 -->
+    <div class="about-bio fade-up" style="margin-top:2rem; text-align:center;">
+      <h2 style="justify-content:center;">📮 联系我</h2>
+      <p style="margin-top:0.5rem; margin-bottom:1.5rem;">无论是技术交流、合作机会还是友好的问候，欢迎随时联系！</p>
+      <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+        <a href="https://github.com/again-h" target="_blank" class="btn btn-outline">
+          🐙 GitHub
+        </a>
+        <a href="posts.html" class="btn btn-primary">
+          📝 阅读博客
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">xiaoyang</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">用代码记录生活，用文字传递思想</p>
+        <div class="footer-links">
+          <a href="https://github.com/again-h" target="_blank" class="footer-link">GitHub</a>
+          <a href="posts.html" class="footer-link">文章</a>
+          <a href="about.html" class="footer-link">关于</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 xiaoyang · Built with ❤️ and pure HTML/CSS/JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/posts-data.js"></script>
+</body>
+</html>
