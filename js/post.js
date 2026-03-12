@@ -55,7 +55,10 @@ function renderPost() {
   }
 
   // 更新页面标题
-  document.title = `${post.title} - xiaoyang's Blog`;
+  document.title = `${post.title} - 黄shiqin的博客`;
+  // 动态更新 og:title
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', `${post.title} - 黄shiqin的博客`);
 
   // 渲染文章
   container.innerHTML = `

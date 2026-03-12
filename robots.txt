@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# 站点地图
+Sitemap: https://again-h.github.io/blog/sitemap.xml
+
+# 欢迎搜索引擎爬取
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /

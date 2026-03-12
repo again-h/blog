@@ -8,7 +8,7 @@ function initTypingEffect() {
   if (!el) return;
 
   const texts = [
-    '热爱代码，享受创造 ✨',
+    '黄shiqin · 热爱代码，享受创造 ✨',
     '全栈开发者 & 技术博主 🚀',
     '每行代码都是一首诗 💻',
     '学习 · 分享 · 成长 🌱'
